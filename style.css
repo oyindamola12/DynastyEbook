@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body, html {
+	font-family: "Ubuntu", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    width: 100vw;
+}
+
+.center {
+    text-align: center;
+
+}
+.center2 {
+    width: 100%;
+    text-align:left;
+padding: 10% 0%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.ebook-cover {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
+}
+.ebook-cover2 {
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
+}
+.plans {
+   /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
+    /* background-color: #000; */
+    margin-left: 20px;
+}
+.image{
+   min-height:100vh;
+  min-width: 100vw;
+}
+
+#downloadBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: left;
+    user-select: none;
+}
+/*
+#downloadBtn:hover {
+    background-color: #45a049;
+}
+
+#downloadBtn:active {
+    background-color: #3e8e41;
+} */
+
+#one{
+    /* background-image: url('powder.gif'); */
+    height: 100vh;
+    width: 100vw;
+
+    /* background-size: cover;
+    background-repeat: none; */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height:100vh;
+    min-width: 100vw;
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.dynasty{
+margin-bottom: -2;
+    font-size: 15vw;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+#overlay2 {
+    position: fixed; /* Sit on top of the page content */
+    /* Hidden by default */
+    display: none;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+
+  }
+  .popupReview2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+    height: 280px;
+    width: 300px;
+
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+	color: #fff;
+	background-color: #000;
+	height: 30px;
+	width: 30px;
+	border-radius: 4px;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.EnterReview{
+    margin-bottom: 15px;
+    height: 100px;
+    border: #fff 1px solid;
+    border-bottom: #000 1px solid;
+    padding: 10px;
+    margin-top: 10px;
+
+
+
+    }
+    .inputName{
+        margin-bottom: 15px;
+        outline: none;
+        border: #fff 1px solid;
+        border-bottom: #000 1px solid;
+        padding: 10px;
+
+    }
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10%;
+
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10%;
+
+}
+.section3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0%;
+
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+.plans div{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text{
+    margin-top: 10px;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+.text2 {
+    width: 50%;
+    padding: 0 20px;
+    margin-left: 10%;
+}
+
+.text2 ul {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.text2  li {
+    margin-bottom: 10px;
+   margin-top: 10%;
+   font-size: 1vw;
+   line-height: 1.7vw;
+   font-weight: 200;/* Add margin between list items */
+}
+
+@media  only screen and (max-width: 800px) {
+.image{
+
+min-height: 95vh;
+min-width: 100vw;
+
+
+}
+
+.dynasty{
+font-size: 15vw;
+text-align: center;
+
+
+}
+
+.center2 {
+min-width: 100vw;
+
+
+flex-direction: column;
+
+        }
+
+        .text{
+            margin-top: -10px;
+            font-size: 2.5vw;
+        }
+
+        .text2  li {
+            margin-bottom: 10px;
+            margin-top: 3%;
+            font-size: 3vw;
+            line-height: 5vw;/* Add margin between list items */
+
+        }
+
+        .section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-direction: column;
+            margin-top: 10%;
+
+        }
+        .section2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-direction: column;
+            margin-top: 10%;
+
+        }
+
+        .section3 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-direction: column;
+            margin-top: 0%;
+
+        }
+        .h2div{
+            text-align: center;
+             margin-top: 0%
+        }
+        .text2 {
+            width: 25%;
+            margin-left:5%;
+
+
+        }
+
+
+        .plans {
+            width: 300px; /* Adjust width as needed */
+            height:  300px; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        .plans div{
+
+            color: #6c493c;
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+        }
+
+        .h2div{
+            text-align: center;
+             margin-top: 1%
+        }
+}
